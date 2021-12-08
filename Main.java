@@ -10,8 +10,12 @@ public class Main {
 
 		LinearRegression ln = new LinearRegression();
 		double learning_rate = 0.001;
-		int num_epoch = 50;
-		double[][] dataset = {{1, 1}, {2, 3}, {4, 3}, {3, 2}, {5, 5}};
+		int num_epoch = 13100;
+		double[][] dataset = {
+			{23, 651},  {26, 762},  {30, 856},
+			{34, 1063}, {43, 1190}, {48, 1298}, 
+			{52, 1421}, {57, 1440}, {58, 1518}
+    	};
 
 		ln.train(dataset, learning_rate, num_epoch);
 
@@ -26,4 +30,3 @@ public class Main {
 	}
 
 }
-
